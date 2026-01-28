@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>new account</title>
+    <link rel="stylesheet" href="newaccount.css" />
+  </head>
+  <body>
+    <h1 align="center">Create New Account Here.</h1>
+    <div class="form">
+      <form action="newaccount.php">
+        <div class="name1">
+          <label for="name">FULL NAME</label>
+          <br />
+          <input
+            type="text"
+            name="nametxt"
+            placeholder="enter the name"
+            required
+          />
+        </div>
+        <div class="birthdate">
+          <label for="birthdate">D.O.B</label>
+          <br />
+          <input
+            type="date"
+            name="dob"
+            id="bd"
+            placeholder="enter date of birth"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email">EMAIL</label><br />
+          <input
+            type="email"
+            name="emailtxt"
+            id="email"
+            placeholder="enter your email id"
+            required
+          />
+        </div>
+        <div class="username">
+          <label for="username">USERNAME</label><br />
+          <input
+            type="text"
+            name="user"
+            id="user"
+            placeholder="Enter username"
+            required
+          />
+        </div>
+        <div class="password">
+          <label for="password">CREATE PASSWORD</label><br />
+          <input
+            type="password"
+            name="pwdtxt"
+            placeholder="enter atleast 8 characters"
+            required
+          />
+        </div>
+
+        <div class="submit"><input type="submit" value="SUBMIT" /></div>
+        <div class="back">
+          <a href="loginform.html">Go Back to login page</a>
+        </div>
+      </form>
+    </div>
+    <div class="menu">
+      <details>
+        <summary>MENU
+        </summary>
+       <div class="mi"> <a href="index.html">HOME</a>
+        <a href="design.html">DESIGNS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="enquiry.html">ENQUIRY</a>
+    </div>
+    </details>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+
+    *{
+      
+     
+        box-sizing: border-box;
+        color: black;
+        overflow: hidden;
+        font-family: verdana;
+      
+    }
+    body{
+      background-image: url(home-bg.jpg);
+    }
+    label{
+      user-select: none;
+    }
+    .menu{
+      position: absolute;
+      top: 2%;
+      left: 1%;
+      cursor: pointer;
+      user-select: none;
+   }
+   .mi a{
+      margin: 5px;
+      text-decoration: none;
+  
+   }
+   .mi a:hover{
+     color: orangered;
+     
+  }
+    h1{
+        padding: 3%;
+        user-select: none;
+    }
+   form{
+    padding: 30px;
+    width: 50%;
+   position: fixed;
+    top: 20%;
+    left: 25%;
+    border: 3px solid rgb(255, 251, 0);
+    border-radius: 15px;
+    box-shadow: 7px 7px 8px 7px #ebe65b;
+}
+input[type=text],[type=password]{
+    margin: 2%;
+    border: 2px solid rgb(225, 255, 0);
+    font-size: large;
+}
+input[type=checkbox]{
+    margin: 1%;
+    cursor: pointer;
+}
+input[type=submit]{
+  background-color: rgb(210, 24, 24);
+    border: none;
+    color: black;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2%;
+  }
+  input[type=submit]:hover{
+    background-color:rgb(255, 251, 0);
+  }
+  
+  .new  a{
+    float: left;
+   
+  }
+  .new   a:hover{
+    text-decoration:underline;
+        color: red;
+  }
+  @media screen and (max-width: 650px) {
+    form,h1, input[type=text],input[type=password],input[type=submit],input[type=checkbox],.forget,.new {
+      width: 100%;
+    }
+  }

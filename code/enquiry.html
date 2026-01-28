@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enquiry</title>
+    <link rel="stylesheet" href="enquiry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    
+</head>
+
+<body>
+
+  <h1 align="center">R.S INTERIORS</h1>
+  <h3 align="center">ENQUIRY FORM</h3>
+  
+    
+    
+    <form action="enquirys.php" method="post">
+        <label for="name">FULL NAME</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            placeholder="enter the name"
+            required
+          />
+          <div class="email">
+            <label for="email">EMAIL</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email Id"
+              required
+            /> <div class="phone">
+                <label for="phone">PHONE NO</label><br />
+                <input type="text" name="phone" id="phone"placeholder="enter your phone number" required>
+                    <br>
+                    <label for="desc">DESCRIPTION</label><br>
+                <textarea name="desc" id="description" cols="30" rows="10"placeholder="what are your questions?" required></textarea>
+                <div class="submit"><input type="submit" value="SUBMIT" /></div>
+
+            </div>
+            
+    </form>
+    <div class="menu">
+      <details>
+        <summary>MENU
+        </summary>
+       <div class="mi"> <a href="index.html">HOME</a>
+        <a href="design.html">DESIGNS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="enquiry.html">ENQUIRY</a>
+    </div>
+    </details>
+    </div>
+    
+</body>
+
+</html>

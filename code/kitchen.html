@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen designs</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: black;
+            padding: 0%;
+            margin: 0%;
+            border: 0%;
+        }
+        .slider{
+      width: 100%;
+      height: 100% ;
+      position: absolute;
+      top: 10%;
+      background-image: url(https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
+      background-size: 100% 100%;
+      animation: slider 30s infinite ease-in;
+     }
+     @keyframes slider{
+      0%{background-image: url(https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+
+      20%{background-image: url(https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      40%{
+        background-image: url(https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&w=600); 
+      }
+      60%{background-image: url(https://images.pexels.com/photos/94865/pexels-photo-94865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+      80%{
+         background-image: url(https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      100%{background-image: url(https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+     }
+     .menu{
+        position: fixed;
+        top: 2%;
+        left: 1%;
+        cursor: pointer;
+        user-select: none;
+     }
+     .mi a{
+        margin: 5px;
+        text-decoration: none;
+
+     }
+     .mi a:hover{
+       color: orangered;
+       
+    }
+     
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <h1 align="center">KITCHEN DESIGNS</h1>
+    
+    </div>
+    <div class="slider">
+       
+    </div>
+    <div class="menu">
+        <details>
+          <summary>MENU
+          </summary>
+         <div class="mi"> <a href="index.html">HOME</a>
+          <a href="design.html">DESIGNS</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="enquiry.html">ENQUIRY</a>
+      </div>
+      </details>
+      </div>
+</body>
+</html>

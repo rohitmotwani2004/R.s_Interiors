@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: rgb(39, 37, 37);
+    text-align: center;
+    font-size: large;
+    padding: 2%;
+}
+
+nav {
+    background-color: rgb(225, 65, 86);
+    width: 100%;
+    position: relative;
+    padding: 2% 0;
+    font-size: 1rem;
+    height: 50px;
+    cursor: pointer;
+    display:flex;
+    justify-content: space-evenly; /* Horizontally distribute items */
+   align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.home,
+.design,
+.aboutus,
+.enquiry,
+.signup {
+    margin: 5px;
+}
+
+/* Adjust icon and link alignment */
+nav i {
+    margin-right: 6px;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    animation: slider 30s infinite ease-in (0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%)
+}
+
+@keyframes slider {
+    0% { background-image: url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg); }
+    20% { background-image: url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+    40% { background-image: url(https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+    60% { background-image: url(https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+    80% { background-image: url(https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+    100% { background-image: url(https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+.social-media a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+.social-media a:hover {
+    color: orangered;
+  }
+nav:hover{
+    box-shadow: 4px 4px 14px black;
+ } 

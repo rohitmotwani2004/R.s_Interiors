@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+         loginpage
+        </title>
+<link rel="stylesheet" href="loginform.css">
+<script>
+  function showpassword()
+  {
+  x=document.getElementById("pass");
+  if (x.type=="password")
+  {
+  x.type="text";
+  }
+  else
+  {
+  x.type="password";
+  }
+  }
+  </script>
+    </head>
+    <body>
+        <h1 align="center" >R.s Interiors</h1>
+        <form action="loginform.php">
+
+          <div class="username" >
+            <label for="phoneno">USERNAME</label><br>
+            <input type="text" name="user" id="user"placeholder="Enter username" required>
+        </div>
+                <div  class="pass" >
+                    <label for="pass">       
+                        PASSWORD  </label><br>
+                  <input type="password" name="pass" id="pass" placeholder="enter your password" required>
+                </div>
+              </div>
+              <div class="showhide">
+              <input type=checkbox onclick="showpassword()">Show Password
+            </div>
+           <div class="button" > 
+            <b> <input type="submit"value="LOGIN"> </b>
+           </div>
+        <div  class="new" >
+            <a href="newaccount.html">Create New Account</a>
+        </div>
+        </form>
+        <div class="menu">
+          <details>
+            <summary>MENU
+            </summary>
+           <div class="mi"> <a href="index.html">HOME</a>
+            <a href="design.html">DESIGNS</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="enquiry.html">ENQUIRY</a>
+        </div>
+        </details>
+        </div>
+    </body>
+</html>

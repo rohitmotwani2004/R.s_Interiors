@@ -1,0 +1,85 @@
+*{
+      box-sizing: border-box;
+      color: black;
+      overflow: hidden;
+      font-family: verdana;
+  }
+  .form{
+      padding: 2%;
+      width: 50%;
+     position: fixed;
+      top: 20%;
+      left: 25%;
+      border: 3px solid rgb(255, 255, 0);
+      box-shadow: 7px 7px 8px 7px #ebe65b;
+  }
+  body{
+
+    background-image: url(https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+  label{
+    user-select: none;
+  }
+
+  h1
+    {
+      padding: 3%;
+      user-select: none;
+    }
+  
+    input[type=text],input[type=date],input[type=email] ,input[type=password]{
+      
+          border:2px solid rgb(255, 251, 0);
+          margin: 1.5%;
+          font-size: large;
+    }
+    
+    input[type=submit]{
+      background-color: #d64521;
+      text-align: center;
+      border: none;
+      color: white;
+      padding: 2%;
+      margin: auto;
+    
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 2%;
+    }
+    input[type=submit]:hover{
+      background-color:rgb(251, 255, 0);
+      color: black;
+    }
+    .back  a{
+      color: red;
+      float: right;
+      font-size: large;
+     
+    }
+    .back   a:hover{
+      text-decoration:underline;
+          color:black;
+
+    }
+    .menu{
+      position: absolute;
+      top: 2%;
+      left: 1%;
+      cursor: pointer;
+      user-select: none;
+   }
+   .mi a{
+      margin: 5px;
+      text-decoration: none;
+  
+   }
+   .mi a:hover{
+     color: orangered;
+     
+  }
+    @media screen and (max-width: 650px) {
+      .form,.h1, input[type=text],input[type=date],input[type=email],input[type=submit] {
+        width: 100%;
+      }
+    }

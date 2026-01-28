@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            background-color: rgb(50, 44, 44);
+            box-sizing: border-box;
+           text-transform: capitalize;
+           color: WHITE;
+        }
+
+        h1{ 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            padding-top: 20px;
+            
+        }
+        .headP{
+        color: yellow;
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+        }
+       main{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+       }
+
+
+    .head{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       
+     }
+     .list{
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     }
+     .ul{
+       
+        color: azure;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       font-size: 17px;
+       flex-wrap: wrap;
+     
+     }
+     
+        @media(max-width:450px)
+
+    {
+     
+    main{
+          
+        flex-wrap: wrap;
+    }
+    .ul{
+         display: none;
+         
+         
+
+    }
+    }
+    .menu{
+        position: fixed;
+        top: 2%;
+        left: 1%;
+        cursor: pointer;
+        user-select: none;
+        color: antiquewhite;
+        
+
+     }
+     a{
+        margin: 5px;
+        text-decoration: none;
+        color: antiquewhite;
+
+     }
+     .mi a:hover{
+       color: red;
+       
+       
+    }
+ #setButton{
+    background-color: white;
+    color: black;
+    padding: 7px;
+    margin: 10px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+
+ }
+        
+</style>
+
+</head>
+<body>
+    <header>
+        <div>
+    <div class="menu">
+        <details>
+          <summary>MENU
+          </summary>
+         <div class="mi"> <a href="index.html">HOME</a>
+          <a href="design.html">DESIGNS</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="enquiry.html">ENQUIRY</a>
+      </div>
+      </details>
+      </div>
+
+        <div class="head">
+            <h1>design options for your budget</h1>
+            <p class="headP">choose your budget</p>
+            <label for="budget">Select Budget:</label>
+            <input type="range" id="budget" name="budget" min="0" max="1000000" step="10000" value="0" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output> Rupees
+            
+            <button id="setButton">Set</button>
+            
+            <p id="selectedBudget"></p>
+            
+            <script>
+              document.getElementById('setButton').addEventListener('click', function() {
+                const budgetValue = document.getElementById('budget').value;
+                document.getElementById('selectedBudget').textContent = `Selected Budget: ${budgetValue} rupees`;
+              });
+            </script>
+            
+            
+        </div>
+    </header>
+<main>
+
+    <div class="img1">
+        <img src="https://cdn.vox-cdn.com/thumbor/qdKR6NXE5UCdsYSX1zm6EYoGD-k=/0x0:4560x3300/920x613/filters:focal(1916x1286:2644x2014):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60077225/House_Calls_Brooklyn_Zames_Williams_living_room_2_Matthew_Williams.0.jpg" width="300px" alt="img1">
+    </div>
+    
+    <div class="img2">
+        <img src="https://images.pexels.com/photos/10758464/pexels-photo-10758464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300px" alt=""> </div>
+        <div class="img3">
+            <img src="https://images.pexels.com/photos/1668860/pexels-photo-1668860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="300px" alt="">
+        </div>
+        
+    </main>
+        <footer>
+
+            <div class="list">
+                <p class="listp">what influences the budget</p>
+            </div>
+                <ul class="ul">
+
+                    <li class="li">flooring</li>
+                    <li class="li" >decortive accessories</li>
+                    <li class="li">shipping fees</li>
+                    <li class="li">windows treatments</li>
+                    <li class="li">labor costs</li class="li">
+                    <li class="li">applicable taxes</li>
+                </ul>
+        </footer>
+        </body>
+</html>

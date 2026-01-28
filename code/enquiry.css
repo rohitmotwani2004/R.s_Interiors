@@ -1,0 +1,88 @@
+   /* equiry page css */
+
+   * {
+     box-sizing: border-box;
+     text-transform: capitalize;
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   body {
+     background-image: url(home-bg.jpg);
+   }
+
+   form {
+     padding: 2%;
+     width: 50%;
+     position: fixed;
+     top: 20%;
+     left: 25%;
+     border: 3px solid red;
+     box-shadow: 3px 2px 3px 7px rgba(236, 40, 40, 0.991);
+
+   }
+   .menu{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    cursor: pointer;
+    user-select: none;
+ }
+ .mi a{
+    margin: 5px;
+    text-decoration: none;
+
+ }
+ .mi a:hover{
+   color: orangered;
+   
+}
+   h1 {
+     position: absolute;
+     top: 4%;
+     left: 42%;
+   }
+
+   h3 {
+     position: absolute;
+     top: 10%;
+     left: 45%;
+   }
+
+   input[type=email] {
+     text-transform: none;
+   }
+
+   input[type=text],
+   input[type=email] {
+     margin: 1.5%;
+     width: 40%;
+     font-size: large;
+     border: 2px solid red;
+   }
+
+   #description {
+     margin: 1.5%;
+     width: 40%;
+     font-size: 14px;
+     border: 2px solid red;
+   }
+
+   input[type=submit] {
+     background-color: yellow;
+     text-align: center;
+     border: none;
+     color: black;
+     padding: 2%;
+     margin: 4%;
+     width: 20%;
+     text-decoration: none;
+     display: block;
+     font-size: 18px;
+     margin: 2%;
+   }
+
+   input[type=submit]:hover {
+     background-color: red;
+   }
+   
