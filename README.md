@@ -1,14 +1,7 @@
-Here’s a **professional, complete, and GitHub-ready README.md** written specifically for your project summary and repository 👇
-You can **copy–paste this directly** into your GitHub README.
 
----
 
 # 🏠 R.S. Interiors – Interior Designer Website
 
-🔗 **GitHub Repository:**
-[https://github.com/rohitmotwani2004/R.s_Interiors](https://github.com/rohitmotwani2004/R.s_Interiors)
-
----
 
 ## 📌 Project Overview
 
